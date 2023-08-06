@@ -1,0 +1,52 @@
+{
+  "name": "ask-bible",
+  "author": "Mateusz Stefanowicz",
+  "version": "0.0.1",
+  "description": "Serverless aws-nodejs-typescript",
+  "type": "commonjs",
+  "main": "serverless.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.350.0",
+    "@aws-sdk/client-apigatewayv2": "^3.350.0",
+    "@aws-sdk/credential-providers": "^3.315.0",
+    "@middy/core": "^3.4.0",
+    "@middy/error-logger": "^4.4.0",
+    "@middy/event-normalizer": "^4.4.0",
+    "@middy/http-cors": "^4.4.0",
+    "@middy/http-error-handler": "^4.3.1",
+    "@middy/http-header-normalizer": "^4.4.0",
+    "@middy/http-json-body-parser": "^3.4.0",
+    "@middy/input-output-logger": "^4.4.0",
+    "dotenv": "^16.0.3",
+    "http-errors": "^2.0.0",
+    "json-schema-to-ts": "^2.9.1",
+    "moment": "^2.29.4",
+    "openai": "4.0.0-beta.8",
+    "pino": "^8.14.1",
+    "pino-lambda": "^4.2.1",
+    "short-unique-id": "^4.4.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/types": "^3.347.0",
+    "@serverless/typescript": "^3.0.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/node": "^18.14.1",
+    "@types/serverless": "^3.12.11",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.45.1"
+  }
+}
